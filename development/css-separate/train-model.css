@@ -1,0 +1,315 @@
+@-webkit-keyframes falling {
+  /* line 4, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: translateZ(-50px);
+    -moz-transform: translateZ(-50px);
+    -ms-transform: translateZ(-50px);
+    -o-transform: translateZ(-50px);
+    transform: translateZ(-50px);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes falling {
+  /* line 11, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: translateZ(-50px);
+    -moz-transform: translateZ(-50px);
+    -ms-transform: translateZ(-50px);
+    -o-transform: translateZ(-50px);
+    transform: translateZ(-50px);
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes falling {
+  /* line 18, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: translateZ(-50px);
+    -moz-transform: translateZ(-50px);
+    -ms-transform: translateZ(-50px);
+    -o-transform: translateZ(-50px);
+    transform: translateZ(-50px);
+    opacity: 0;
+  }
+}
+
+@keyframes falling {
+  /* line 25, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: translateZ(-50px);
+    -moz-transform: translateZ(-50px);
+    -ms-transform: translateZ(-50px);
+    -o-transform: translateZ(-50px);
+    transform: translateZ(-50px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes arotateX {
+  /* line 32, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+@-moz-keyframes arotateX {
+  /* line 38, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+@-ms-keyframes arotateX {
+  /* line 44, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes arotateX {
+  /* line 50, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+@-webkit-keyframes arotateY {
+  /* line 56, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-moz-keyframes arotateY {
+  /* line 62, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-ms-keyframes arotateY {
+  /* line 68, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes arotateY {
+  /* line 74, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes arotateZ {
+  /* line 80, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+@-moz-keyframes arotateZ {
+  /* line 86, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+@-ms-keyframes arotateZ {
+  /* line 92, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes arotateZ {
+  /* line 98, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+/* line 23, ../sass/train-model.scss */
+.train-model {
+  position: absolute;
+  width: 0;
+  height: 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateX(-90deg) translateZ(-26px) scaleX(0.5) scaleY(0.5) scaleZ(0.5);
+  -moz-transform: rotateX(-90deg) translateZ(-26px) scaleX(0.5) scaleY(0.5) scaleZ(0.5);
+  -ms-transform: rotateX(-90deg) translateZ(-26px) scaleX(0.5) scaleY(0.5) scaleZ(0.5);
+  -o-transform: rotateX(-90deg) translateZ(-26px) scaleX(0.5) scaleY(0.5) scaleZ(0.5);
+  transform: rotateX(-90deg) translateZ(-26px) scaleX(0.5) scaleY(0.5) scaleZ(0.5);
+}
+/* line 35, ../sass/train-model.scss */
+.train-model .floor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 374px;
+  height: 100px;
+  -webkit-box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.5);
+  margin-left: -187px;
+  margin-top: -50px;
+  background-color: rgba(0, 0, 0, 0.35);
+  -webkit-transform: translateZ(50.5px);
+  -moz-transform: translateZ(50.5px);
+  -ms-transform: translateZ(50.5px);
+  -o-transform: translateZ(50.5px);
+  transform: translateZ(50.5px);
+}
+/* line 49, ../sass/train-model.scss */
+.train-model .roof {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 374px;
+  height: 100px;
+  margin-left: -187px;
+  margin-top: -50px;
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, transparent), color-stop(25%, transparent), color-stop(25%, #351c09), color-stop(50%, #351c09), color-stop(50%, transparent), color-stop(75%, transparent), color-stop(75%, #351c09), color-stop(100%, #351c09));
+  background: -webkit-linear-gradient(left, transparent 0%, transparent 25%, #351c09 25%, #351c09 50%, transparent 50%, transparent 75%, #351c09 75%, #351c09 100%);
+  background: -moz-linear-gradient(left, transparent 0%, transparent 25%, #351c09 25%, #351c09 50%, transparent 50%, transparent 75%, #351c09 75%, #351c09 100%);
+  background: -o-linear-gradient(left, transparent 0%, transparent 25%, #351c09 25%, #351c09 50%, transparent 50%, transparent 75%, #351c09 75%, #351c09 100%);
+  background: linear-gradient(left, transparent 0%, transparent 25%, #351c09 25%, #351c09 50%, transparent 50%, transparent 75%, #351c09 75%, #351c09 100%);
+  -webkit-background-size: 25%;
+  -moz-background-size: 25%;
+  -o-background-size: 25%;
+  background-size: 25%;
+  background-repeat: repeat;
+  background-color: #463020;
+  -webkit-transform: translateZ(-50px);
+  -moz-transform: translateZ(-50px);
+  -ms-transform: translateZ(-50px);
+  -o-transform: translateZ(-50px);
+  transform: translateZ(-50px);
+}
+/* line 74, ../sass/train-model.scss */
+.train-model .front {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('../images/train-s9277ef6880.png');
+  background-position: -80px 0;
+  background-repeat: no-repeat;
+  width: 71px;
+  height: 100px;
+  margin-left: -35.5px;
+  margin-top: -50px;
+  height: 100px;
+  -webkit-transform: rotateX(90deg) rotateY(90deg) translateZ(-186.5px);
+  -moz-transform: rotateX(90deg) rotateY(90deg) translateZ(-186.5px);
+  -ms-transform: rotateX(90deg) rotateY(90deg) translateZ(-186.5px);
+  -o-transform: rotateX(90deg) rotateY(90deg) translateZ(-186.5px);
+  transform: rotateX(90deg) rotateY(90deg) translateZ(-186.5px);
+}
+/* line 82, ../sass/train-model.scss */
+.train-model .back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('../images/train-s9277ef6880.png');
+  background-position: -80px 0;
+  background-repeat: no-repeat;
+  width: 71px;
+  height: 100px;
+  margin-left: -35.5px;
+  margin-top: -50px;
+  height: 100px;
+  -webkit-transform: rotateX(90deg) rotateY(-90deg) translateZ(-186.5px);
+  -moz-transform: rotateX(90deg) rotateY(-90deg) translateZ(-186.5px);
+  -ms-transform: rotateX(90deg) rotateY(-90deg) translateZ(-186.5px);
+  -o-transform: rotateX(90deg) rotateY(-90deg) translateZ(-186.5px);
+  transform: rotateX(90deg) rotateY(-90deg) translateZ(-186.5px);
+}
+/* line 90, ../sass/train-model.scss */
+.train-model .left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('../images/train-s9277ef6880.png');
+  background-position: 0 -100px;
+  background-repeat: no-repeat;
+  width: 374px;
+  height: 100px;
+  margin-left: -187px;
+  margin-top: -50px;
+  -webkit-transform: rotateX(90deg) translateZ(-35.5px);
+  -moz-transform: rotateX(90deg) translateZ(-35.5px);
+  -ms-transform: rotateX(90deg) translateZ(-35.5px);
+  -o-transform: rotateX(90deg) translateZ(-35.5px);
+  transform: rotateX(90deg) translateZ(-35.5px);
+}
+/* line 97, ../sass/train-model.scss */
+.train-model .right {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('../images/train-s9277ef6880.png');
+  background-position: 0 -100px;
+  background-repeat: no-repeat;
+  width: 374px;
+  height: 100px;
+  margin-left: -187px;
+  margin-top: -50px;
+  -webkit-transform: rotateX(90deg) translateZ(35.5px);
+  -moz-transform: rotateX(90deg) translateZ(35.5px);
+  -ms-transform: rotateX(90deg) translateZ(35.5px);
+  -o-transform: rotateX(90deg) translateZ(35.5px);
+  transform: rotateX(90deg) translateZ(35.5px);
+}

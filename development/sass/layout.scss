@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@import "compass";
+@import "mixin/*";
+
+.soil{
+  @include background(
+    inline-image('soil-type-0.jpg')
+    0 0
+    repeat
+    );
+  }
+
+html{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    @include perspective(1700px);
+    @include transform-style(preserve-3d);
+    overflow: hidden;
+    z-index: 1;
+    font: 12px/18px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    a{
+      color:#000;
+      text-decoration: none;
+      text-transform: uppercase;
+      }
+    }
+  }
+
+#templates{
+  display: none;
+  }
+
+.page{
+  display: none;
+  @include transform-style(preserve-3d);
+  @include zero-size;
+  @include transition(
+    transform .75s ease-in-out
+    );
+  
+  &.state-score{
+    @include transform3d(
+      translateY(1690px)
+      );
+    }
+
+  &.state-game-over{
+    @include transform3d(
+      translateY(-5200px)
+      );
+    }
+
+  &.state-name{
+    @include transform3d(
+      translateY(-1690px)
+      );
+    }
+
+  &.state-menu{
+    @include transform3d(
+      translateY(0)
+      );
+    }
+
+  &.state-game{
+    @include transform3d(
+      translateY(-3200px)
+      );
+    .screen.game{
+      nav{
+        display: block;
+        }
+      .stats{
+        display: block;
+        }
+      }
+    }
+
+  .screen{
+    @include transform-style(preserve-3d);
+    }
+  }

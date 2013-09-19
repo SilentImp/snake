@@ -1,0 +1,99 @@
+@import "compass";
+@import "mixin/*";
+
+@mixin house-side{
+  position: absolute;
+  left: 0;
+  top: 0;
+  @include s($house, house-side);
+  margin-left: - image-width(sprite-file($house, house-side))/2;
+  margin-top: - image-height(sprite-file($house, house-side))/2;
+  }
+
+@mixin house-front{
+  position: absolute;
+  left: 0;
+  top: 0;
+  @include s($house, house-front);
+  margin-left: - image-width(sprite-file($house, house-front))/2;
+  margin-top: - image-height(sprite-file($house, house-side))/2;
+  height: image-height(sprite-file($house, house-side));
+  }
+
+@mixin house-back{
+  position: absolute;
+  left: 0;
+  top: 0;
+  @include s($house, house-back);
+  margin-left: - image-width(sprite-file($house, house-back))/2;
+  margin-top: - image-height(sprite-file($house, house-side))/2;
+  height: image-height(sprite-file($house, house-side));
+  }
+
+.house-model{
+  position: absolute;
+  width: 0;
+  height: 0;
+  @include transform-style(preserve-3d);
+  @include transform3d(
+    rotateX(-90deg)
+    translateZ(- image-height(sprite-file($house, house-side))/4 - 1)
+    scaleX(.5)
+    scaleY(.5)
+    scaleZ(.5)
+    );
+  .roof{
+      position: absolute;
+      left: 0;
+      top: 0;
+      @include s($house, house-roof);
+      margin-left: - image-width(sprite-file($house, house-roof))/2;
+      margin-top: - image-height(sprite-file($house, house-roof))/2;
+      @include transform3d(
+        translateZ(- image-height(sprite-file($house, house-side))/2)
+        );
+    }
+  .floor{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: image-width(sprite-file($house, house-roof)); 
+      height: image-height(sprite-file($house, house-roof)); 
+      @include box-shadow(0 0 60px 10px rgba(0, 0, 0, .5));
+      margin-left: - image-width(sprite-file($house, house-roof))/2;
+      margin-top: - image-height(sprite-file($house, house-roof))/2;
+      @include transform3d(
+        translateZ(image-height(sprite-file($house, house-side))/2 + 0.5)
+        );
+    }
+  .front{
+    @include house-front;
+    @include transform3d(
+      rotateX(90deg)
+      rotateY(90deg)
+      translateZ(- (image-width(sprite-file($house, house-side))+1)/2)
+      );
+    }
+  .back{
+    @include house-back;
+    @include transform3d(
+      rotateX(90deg)
+      rotateY(-90deg)
+      translateZ(- (image-width(sprite-file($house, house-side))+1)/2)
+      );
+    }
+  .left{
+    @include house-side;
+    @include transform3d(
+      rotateX(90deg)
+      translateZ(- image-width(sprite-file($house, house-front))/2)
+      );
+    }
+  .right{
+    @include house-side;
+    @include transform3d(
+      rotateX(90deg)
+      translateZ(image-width(sprite-file($house, house-front))/2)
+      );
+    }
+  }

@@ -1,0 +1,409 @@
+@charset "utf-8";
+@import "compass";
+@import "mixin/*";
+
+.screen.game{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  margin: -200px 0 0 -200px; 
+  @include transform3d(
+    translateY(3150px)
+    translateZ(-150px)
+    ); 
+  @include transform-style(preserve-3d);
+  .game-wrapper{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 50%;
+    top: 50%;
+    margin: -200px 0 0 -200px;
+    @include transform-style(preserve-3d);
+    .cloud{
+      @include s($sky, cloud);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0;
+      margin-left: - image-width(sprite-file($sky, cloud))/2;
+      margin-top: - image-height(sprite-file($sky, cloud))/2;
+      z-index: -1;
+      @include transform(
+        translateZ(-160px)
+        translateX(208px)
+        translateY(222px)
+        scale(4)
+        );
+      }
+    .side{
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: 0;
+      height: 100px;
+      width: 400px;
+      @include transform-origin(100%, 0);
+      @include transform-style(preserve-3d);
+      @include transform3d(
+        translateY(400px)
+        rotateX(-90deg)
+        );
+       @include background(
+          inline-image('soil.png') repeat
+          );
+        
+      @include background-size(
+        auto 100%
+        )
+      }
+    .field{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin: -200px 0 0 -200px;
+      width: 400px;
+      height: 400px;
+      @include transform-style(preserve-3d);
+      @include transform3d(
+        rotateX(25deg)
+        translateZ(-1px)
+        );
+      @include background-size(
+        160px 160px
+        );
+      .position{
+        position: absolute;
+        top: 0;
+        left: 0;
+        left: 50%;
+        top: 50%;
+        margin: -200px 0 0 -200px;
+        width: 400px;
+        height: 400px;
+        .x-cord{
+          @include transition(
+            transform .1s ease-out
+            );
+          position: absolute;
+          top: 415px;
+          left: 15px;
+          
+          border:2px solid #fff;
+          
+          width: 6px;
+          height: 6px;
+          border-radius: 10px;
+          background-color: rgba(255, 0, 0, .75);
+          }
+        .stats{
+          display: block;
+          position: absolute;
+          top: 440px;
+          left: 0;
+          height: 40px;
+          text-transform: none;
+          
+          font-size: 12px;
+          line-height: 40px;
+          color: #444;
+          padding: 0;
+          z-index: 20000;
+          
+          text-transform: uppercase;
+          h2{
+            display: inline;
+            }
+          }
+        a.quit{
+          display: block;
+          position: absolute;
+          top: 440px;
+          right: 0;
+          height: 40px;
+          text-transform: none;
+          
+          font-size: 16px;
+          cursor: pointer;
+          line-height: 40px;
+          background-color: #e0e0e0;
+          color: #444;
+          padding: 0 10px;
+          z-index: 20000;
+          &.focused,
+          &:hover{
+            background-color: #333; 
+            color: #FFF;
+            &:after{
+              border-color:#333 transparent transparent;
+              }
+            }
+          &:after{
+            content:".";
+            height: 0;
+            width: 0;
+            overflow: hidden;
+            text-indent: -9999px;
+            line-height: 0;
+            font-size: 0;
+            border-color:#e0e0e0 transparent transparent;
+            border-style: solid;
+            border-width: 10px 0 0 10px;
+            position: absolute;
+            right: 10px;
+            top: 100%;  
+            z-index: -1;
+            }
+
+          }
+        .y-cord{
+          position: absolute;
+          left: 415px;
+          top: 15px;
+          
+          border:2px solid #fff;
+          
+          width: 6px;
+          height: 6px;
+          border-radius: 10px;
+          background-color: rgba(255, 0, 0, .75);
+          @include transition(
+            transform .1s ease-out
+            );
+          }
+        .holder{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          line-height: 40px;
+          color: #FFF;
+          background-color: rgba(0,0,0,.5);
+          box-shadow:inset 0 0 0 1px rgba(255, 255, 255, .75);
+          &.snake{
+            background-color: rgba(255,0,0,.5);
+            }
+          &.building{
+            background-color: rgba(0,255,0,.5);
+            }
+          &.food{
+            background-color: rgba(0,0,255,.5);
+            }
+          }
+        }
+      .house-pos{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        // background: rgba(255,0,0,.5);
+        @include transform-style(preserve-3d);
+        @include transform3d(
+          translateX(320px)
+          translateY(80px)  
+          translateZ(2px)
+          );
+        &.onfire{
+          .house{
+            @include s($sky, explosion);
+            margin-left: - image-width(sprite-file($sky, explosion))/2; 
+            margin-top: - image-height(sprite-file($sky, explosion))/2;
+            @include transform3d(
+              translateZ(2px)
+              scale(.6)
+              );
+            &:after{
+              display: block;
+              position: absolute;
+              content:".";
+              overflow: hidden;
+              font-size: 0;
+              line-height: 0;
+              text-indent: -99999px;
+              @include s($sky, explosion2);
+              left: 50%;
+              top: 50%;
+              margin-left: - image-width(sprite-file($sky, explosion))/2; 
+              margin-top: - image-height(sprite-file($sky, explosion))/2;
+              }
+            .house-model{
+              display: none;
+              }
+            }
+          }
+        }
+      .house{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform-style(preserve-3d);
+        @include transform3d(
+          rotateX(-90deg)
+          rotateY(90deg)
+          translateY(-1px)
+          scaleX(.53)
+          scaleY(.53)
+          scaleZ(.53)
+          ); 
+        }
+      .train-pos{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        @include transform-style(preserve-3d);
+        @include transform3d(
+          translateX(0px)
+          translateY(0px)
+          );
+        @include transition(
+          transform .1s linear
+          );
+        &.head{
+          &.up:after{
+            content:".";
+            display: block;
+            line-height: 0;
+            font-size: 0;
+            text-indent: -999px;
+            overflow: hidden;
+            position: absolute;
+            left: 17px;
+            bottom: 50px;
+            width: 6px;
+            height: 6px;
+            border-radius: 6px;
+            background-color: rgba(0, 255, 255, .5); 
+            }
+          &.down:after{
+            content:"↓";
+            overflow: hidden;
+            display: block;
+            line-height: 0;
+            font-size: 0;
+            text-indent: -999px;
+            position: absolute;
+            left: 17px;
+            top: 50px;
+            width: 6px;
+            height: 6px;
+            border-radius: 6px;
+            background-color: rgba(0, 255, 255, .5); 
+            }
+          &.right:after{
+            content:"→";
+            display: block;
+            line-height: 0;
+            overflow: hidden;
+            font-size: 0;
+            text-indent: -999px;
+            position: absolute;
+            
+            left: 50px;
+            top: 17px;
+            
+            width: 6px;
+            height: 6px;
+            border-radius: 6px;
+            background-color: rgba(0, 255, 255, .5); 
+            }
+          &.left:after{
+            content:".";
+            display: block;
+            overflow: hidden;
+            line-height: 0;
+            font-size: 0;
+            text-indent: -999px;
+            position: absolute;
+            right: 50px;
+            top: 17px;
+            width: 6px;
+            height: 6px;
+            border-radius: 6px;
+            background-color: rgba(0, 255, 255, .5);
+            }
+          }
+        &.food{
+          border-radius: 40px;
+          background: rgba(0, 255, 255,.5);
+          }
+        &.down,
+        &.up{
+          .train{
+            @include transform3d(
+              rotateX(-90deg)
+              rotateY(90deg)
+              translateY(-2px)
+              scaleX(.21)
+              scaleY(.21)
+              scaleZ(.21)
+              ); 
+            }
+          }
+        }
+      .fall{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform-style(preserve-3d);
+        @include animate(falling .2s .12s 1 forwards);
+        opacity:1;
+        @include transform3d(translateZ(0));
+        }
+      .train{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform-style(preserve-3d);
+        @include transition(
+          transform .1s ease-out
+          );
+        @include transform3d(
+          rotateX(-90deg)
+          translateY(-1px)
+          scaleX(.21)
+          scaleY(.21)
+          scaleZ(.21)
+          ); 
+        }
+      }
+    }
+  .back-count.count{
+    display: block;
+    opacity:1;
+    @include transform3d(
+      translateZ(250px)
+      ); 
+    @include transition(
+      transform 1s ease
+      );
+    }
+  .back-count{
+    z-index: 12000;
+    display: none;
+    position: fixed;
+    height: 400px; 
+    line-height: 400px;
+    font-size: 200px;
+    text-align: center;
+    left: 0;
+    top: 0;
+    width: 400px;
+    font-weight: bold;
+    color: #FFF; 
+    text-shadow:0 0 20px #fff;
+    opacity:1;
+    @include transition(
+      transform 1s ease
+      );
+    @include transform3d(
+      translateZ(300px)
+      ); 
+    }
+  }

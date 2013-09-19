@@ -1,4 +1,2 @@
-snake
-=====
+# HTML5 Railway Snake
 
-html5 snake

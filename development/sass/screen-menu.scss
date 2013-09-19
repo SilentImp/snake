@@ -1,0 +1,137 @@
+@import "compass";
+@import "mixin/*";
+
+.screen.menu{
+  @include zero-size;
+  .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 140px;
+    margin: -260px 0 0 -150px; 
+    line-height: 100px;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    vertical-align: bottom;
+    z-index: 11;
+    }
+  .sky{
+    @include zero-size;
+    margin-top: -320px;
+      .cloud{
+        @include s($sky, cloud);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        margin-left: - image-width(sprite-file($sky, cloud))/2;
+        margin-top: - image-height(sprite-file($sky, cloud))/2;
+        &.cloud-1{
+          margin-top: -240px;
+          @include transform(
+            translateZ(-140px)
+            rotate(240deg)
+            scale(1.5)
+            );
+            z-index: 3;
+          }
+        &.cloud-2{
+          @include transform(
+            translateZ(-150px)
+            scale(2)
+            );
+            z-index: 2;
+          }
+        }
+    }
+  .language-navigation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    @include transform3d(
+      rotateX(-15deg)
+      rotateY(40deg) 
+      translateY(100px)
+      translateZ(130px) 
+      translateX(-130px) 
+      );
+      a.selected{
+        display: none;
+        }
+      a{
+        position: absolute;
+        top: 0;
+        left: 0;
+        &:hover{
+          color: #c00; 
+          }
+        }
+    }
+  .global-navigation{
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    display: block;
+    text-align: right;
+    @include transform3d(
+      rotateX(-15deg)
+      rotateY(40deg) 
+      translateZ(40px) 
+      translateY(-20px) 
+      translateX(-120px)
+      );
+    font-size: 24px;
+    line-height: 24px;
+
+    a{
+      white-space: nowrap;
+      padding: 10px 20px;
+      display: block;
+      float: right;
+      clear: right;
+      &.change{
+        display: none;
+        }
+      &:hover{
+        color: #c00; 
+        }
+      }
+    }
+  .menu-scene{
+    @include zero-size;
+    @include transform-style(preserve-3d);
+    @include transform3d(
+      rotateX(-15deg)
+      translateY(75px)
+      rotateY(40deg)
+      );
+    .ground.soil{
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -150px 0 0 -150px;
+      @include background-size(66% 66%);
+      @include transform3d(
+        rotateX(90deg)
+        );
+      }
+    .train{
+      @include transform-style(preserve-3d);
+      @include transform3d(
+        rotateY(-105deg)
+        translateZ(-105px)
+        );
+      }
+    .house{
+      @include transform-style(preserve-3d);
+      }
+    }
+  }

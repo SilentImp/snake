@@ -1,0 +1,13 @@
+@mixin clear{
+  &:after{
+    content:".";
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    text-indent: -9999px;
+    clear: both;
+    }
+  }

@@ -1,0 +1,398 @@
+@-webkit-keyframes falling {
+  /* line 4, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: translateZ(-50px);
+    -moz-transform: translateZ(-50px);
+    -ms-transform: translateZ(-50px);
+    -o-transform: translateZ(-50px);
+    transform: translateZ(-50px);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes falling {
+  /* line 11, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: translateZ(-50px);
+    -moz-transform: translateZ(-50px);
+    -ms-transform: translateZ(-50px);
+    -o-transform: translateZ(-50px);
+    transform: translateZ(-50px);
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes falling {
+  /* line 18, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: translateZ(-50px);
+    -moz-transform: translateZ(-50px);
+    -ms-transform: translateZ(-50px);
+    -o-transform: translateZ(-50px);
+    transform: translateZ(-50px);
+    opacity: 0;
+  }
+}
+
+@keyframes falling {
+  /* line 25, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: translateZ(-50px);
+    -moz-transform: translateZ(-50px);
+    -ms-transform: translateZ(-50px);
+    -o-transform: translateZ(-50px);
+    transform: translateZ(-50px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes arotateX {
+  /* line 32, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+@-moz-keyframes arotateX {
+  /* line 38, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+@-ms-keyframes arotateX {
+  /* line 44, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes arotateX {
+  /* line 50, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+@-webkit-keyframes arotateY {
+  /* line 56, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-moz-keyframes arotateY {
+  /* line 62, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-ms-keyframes arotateY {
+  /* line 68, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes arotateY {
+  /* line 74, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes arotateZ {
+  /* line 80, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+@-moz-keyframes arotateZ {
+  /* line 86, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+@-ms-keyframes arotateZ {
+  /* line 92, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes arotateZ {
+  /* line 98, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+/* line 4, ../sass/screen-name.scss */
+.screen.name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  margin: -160px 0 0 -160px;
+  -webkit-transform: translateY(1740px);
+  -moz-transform: translateY(1740px);
+  -ms-transform: translateY(1740px);
+  -o-transform: translateY(1740px);
+  transform: translateY(1740px);
+  white-space: nowrap;
+}
+/* line 15, ../sass/screen-name.scss */
+.screen.name .answer {
+  font-size: 24px;
+  cursor: pointer;
+  line-height: 60px;
+  height: 60px;
+  margin: 0 0 24px;
+  background-color: #f4f4f4;
+  color: #999;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+  -webkit-transition: right 0.3s linear;
+  -moz-transition: right 0.3s linear;
+  -o-transition: right 0.3s linear;
+  transition: right 0.3s linear;
+}
+/* line 28, ../sass/screen-name.scss */
+.screen.name .answer.focused, .screen.name .answer:hover {
+  background-color: #333;
+  color: #FFF;
+}
+/* line 31, ../sass/screen-name.scss */
+.screen.name .answer.focused input, .screen.name .answer:hover input {
+  color: #fff;
+}
+/* line 34, ../sass/screen-name.scss */
+.screen.name .answer.focused input::-webkit-input-placeholder, .screen.name .answer:hover input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 37, ../sass/screen-name.scss */
+.screen.name .answer.focused input:-moz-placeholder, .screen.name .answer:hover input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 40, ../sass/screen-name.scss */
+.screen.name .answer.focused input::-moz-placeholder, .screen.name .answer:hover input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 43, ../sass/screen-name.scss */
+.screen.name .answer.focused input:-ms-input-placeholder, .screen.name .answer:hover input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 46, ../sass/screen-name.scss */
+.screen.name .answer.focused:after, .screen.name .answer:hover:after {
+  border-color: #333 transparent transparent;
+}
+/* line 50, ../sass/screen-name.scss */
+.screen.name .answer.answer-1.focused {
+  right: 61px;
+}
+/* line 52, ../sass/screen-name.scss */
+.screen.name .answer.answer-1.focused button {
+  display: block;
+}
+/* line 56, ../sass/screen-name.scss */
+.screen.name .answer.answer-1 {
+  top: 20px;
+  padding: 0;
+  z-index: 20;
+  cursor: pointer;
+}
+/* line 62, ../sass/screen-name.scss */
+.screen.name .answer.answer-2 {
+  top: 110px;
+  z-index: 10;
+  font-size: 14px;
+  line-height: 40px;
+  height: 40px;
+}
+/* line 68, ../sass/screen-name.scss */
+.screen.name .answer.answer-2:after {
+  border-width: 12px 0 0 12px;
+  right: 12px;
+}
+/* line 73, ../sass/screen-name.scss */
+.screen.name .answer a {
+  text-transform: none;
+  color: inherit;
+}
+/* line 77, ../sass/screen-name.scss */
+.screen.name .answer:after {
+  content: ".";
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  text-indent: -9999px;
+  line-height: 0;
+  font-size: 0;
+  border-color: #f4f4f4 transparent transparent;
+  border-style: solid;
+  border-width: 20px 0 0 20px;
+  position: absolute;
+  right: 20px;
+  top: 100%;
+  z-index: -1;
+}
+/* line 94, ../sass/screen-name.scss */
+.screen.name .question {
+  z-index: 10;
+  cursor: default;
+  font-size: 24px;
+  line-height: 60px;
+  margin: 0 0 24px;
+  background-color: #444;
+  color: #FFF;
+  padding: 0 10px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+}
+/* line 106, ../sass/screen-name.scss */
+.screen.name .question:after {
+  content: ".";
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  text-indent: -9999px;
+  line-height: 0;
+  font-size: 0;
+  border-color: #444 transparent transparent;
+  border-style: solid;
+  border-width: 20px 20px 0 0;
+  position: absolute;
+  left: 20px;
+  top: 100%;
+}
+/* line 122, ../sass/screen-name.scss */
+.screen.name input {
+  outline: none;
+  -webkit-appearence: none;
+  display: inline-block;
+  border-style: none;
+  box-shadow: none;
+  background: none;
+  font-size: 25px;
+  line-height: 60px;
+  height: 60px;
+  margin: 0 0 0 5px;
+  padding: 0 5px;
+  width: 210px;
+  vertical-align: baseline;
+}
+/* line 136, ../sass/screen-name.scss */
+.screen.name input:focus {
+  box-shadow: 0 0 0 9000px rgba(0, 0, 0, 0.75);
+}
+/* line 140, ../sass/screen-name.scss */
+.screen.name label {
+  color: inherit;
+  display: block;
+  line-height: 60px;
+  padding: 0 0 0 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+/* line 147, ../sass/screen-name.scss */
+.screen.name label span {
+  vertical-align: baseline;
+}
+/* line 151, ../sass/screen-name.scss */
+.screen.name button {
+  cursor: pointer;
+  display: none;
+  background: #e4e4e4;
+  border-style: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0 0 0 1px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 42px;
+  -webkit-appearence: none;
+  color: #000;
+  z-index: 22;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+/* line 171, ../sass/screen-name.scss */
+.screen.name button:hover {
+  background: #fff;
+}
+/* line 173, ../sass/screen-name.scss */
+.screen.name button:hover:after {
+  border-color: #fff transparent transparent;
+}
+/* line 177, ../sass/screen-name.scss */
+.screen.name button:after {
+  content: ".";
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  text-indent: -9999px;
+  line-height: 0;
+  font-size: 0;
+  border-color: #e4e4e4 transparent transparent;
+  border-style: solid;
+  border-width: 20px 0 0 20px;
+  position: absolute;
+  right: 20px;
+  top: 100%;
+  z-index: 22;
+}

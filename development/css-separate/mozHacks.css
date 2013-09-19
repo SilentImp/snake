@@ -1,0 +1,224 @@
+@-webkit-keyframes falling {
+  /* line 4, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: translateZ(-50px);
+    -moz-transform: translateZ(-50px);
+    -ms-transform: translateZ(-50px);
+    -o-transform: translateZ(-50px);
+    transform: translateZ(-50px);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes falling {
+  /* line 11, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: translateZ(-50px);
+    -moz-transform: translateZ(-50px);
+    -ms-transform: translateZ(-50px);
+    -o-transform: translateZ(-50px);
+    transform: translateZ(-50px);
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes falling {
+  /* line 18, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: translateZ(-50px);
+    -moz-transform: translateZ(-50px);
+    -ms-transform: translateZ(-50px);
+    -o-transform: translateZ(-50px);
+    transform: translateZ(-50px);
+    opacity: 0;
+  }
+}
+
+@keyframes falling {
+  /* line 25, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: translateZ(-50px);
+    -moz-transform: translateZ(-50px);
+    -ms-transform: translateZ(-50px);
+    -o-transform: translateZ(-50px);
+    transform: translateZ(-50px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes arotateX {
+  /* line 32, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+@-moz-keyframes arotateX {
+  /* line 38, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+@-ms-keyframes arotateX {
+  /* line 44, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes arotateX {
+  /* line 50, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+@-webkit-keyframes arotateY {
+  /* line 56, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-moz-keyframes arotateY {
+  /* line 62, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-ms-keyframes arotateY {
+  /* line 68, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes arotateY {
+  /* line 74, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes arotateZ {
+  /* line 80, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+@-moz-keyframes arotateZ {
+  /* line 86, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+@-ms-keyframes arotateZ {
+  /* line 92, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes arotateZ {
+  /* line 98, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+/* line 6, ../sass/mozHacks.scss */
+html.moz body .page .screen.game .side {
+  display: none;
+}
+/* line 10, ../sass/mozHacks.scss */
+html.moz body .page .screen.game .game-wrapper .field .train-pos {
+  -webkit-transform: translateZ(3px);
+  -moz-transform: translateZ(3px);
+  -ms-transform: translateZ(3px);
+  -o-transform: translateZ(3px);
+  transform: translateZ(3px);
+}
+/* line 16, ../sass/mozHacks.scss */
+html.moz body .page .screen.game .game-wrapper .field .train-pos.up .train, html.moz body .page .screen.game .game-wrapper .field .train-pos.down .train {
+  background-image: url('../images/train-s9277ef6880.png');
+  background-position: -40px 0;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+/* line 20, ../sass/mozHacks.scss */
+html.moz body .page .screen.game .game-wrapper .field .train-pos .train {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+  margin: -20px 0 0 -20px;
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/train-s9277ef6880.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+/* line 27, ../sass/mozHacks.scss */
+html.moz body .page .screen.game .game-wrapper .field .train-pos .train .train-model {
+  display: none;
+}

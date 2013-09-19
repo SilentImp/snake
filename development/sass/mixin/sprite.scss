@@ -1,0 +1,23 @@
+@import "compass";
+
+$house: sprite-map("house/*.png", $layout: smart);
+$train: sprite-map("train/*.png", $layout: smart);
+$sky: 	sprite-map("sky/*.png", $layout: smart);
+
+@mixin image_size($image){
+	width: image-width($image);
+	height: image-height($image);
+	}
+
+@mixin s($map, $sprite){
+	background-image: sprite-url($map);
+	background-position: sprite-position($map, $sprite);
+	background-repeat: no-repeat;
+	@include image_size(sprite-file($map, $sprite));
+	}
+
+@mixin sns($map, $sprite){
+	background-image: sprite-url($map);
+	background-position: sprite-position($map, $sprite);
+	background-repeat: no-repeat;
+	}

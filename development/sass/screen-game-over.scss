@@ -1,0 +1,70 @@
+@import "compass";
+@import "mixin/*";
+
+.game-over{
+  background-color: rgba(255, 255, 255, .5);
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  margin: -200px 0 0 -200px;
+  white-space: nowrap;
+  @include transform3d(
+    translateY(5200px)
+    );
+  h2{
+    padding-top: 64px;
+    font-size: 48px;
+    line-height: 72px;
+    text-transform: uppercase;
+    }
+  p{
+    white-space: normal;
+    font-size: 24px;
+    line-height: 32px;
+    }
+  nav{
+    padding: 40px 0 0;
+    a{
+      font-size: 16px;
+      cursor: pointer;
+      line-height: 40px;
+      height: 40px;
+      margin: 0 0 24px;
+      background-color: #e0e0e0;
+      color: #444;
+      padding: 0 10px;
+      position: relative;
+      z-index: 1000;
+      &.focused,
+      &:hover{
+        background-color: #333;
+        color: #FFF;
+        &:after{
+          border-color:#333 transparent transparent;
+          }
+        }
+      &:after{
+        content:".";
+        height: 0;
+        width: 0;
+        overflow: hidden;
+        text-indent: -9999px;
+        line-height: 0;
+        font-size: 0;
+        border-color:#e0e0e0 transparent transparent;
+        border-style: solid;
+        border-width: 15px 0 0 15px;
+        position: absolute;
+        right: 15px;
+        top: 100%;
+        z-index: -1;
+        }
+      }
+    .again{
+      float: left;
+      }
+    .menu{
+      float: right;
+      }
+    }
+  }

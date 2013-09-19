@@ -1,0 +1,32 @@
+  @import "compass";
+  @import "mixin/*";
+
+html.moz body .page{
+  .screen.game{
+    .side{
+      display: none;
+      }
+    }
+  .screen.game .game-wrapper .field .train-pos{
+    @include transform3d(
+      translateZ(3px)
+      );
+    &.up,
+    &.down{
+      .train{
+        @include s($train, train-sprite-front);
+        }
+      }
+    .train{
+      @include transform3d(none);
+      margin: -20px 0 0 -20px; 
+      width: 40px;
+      height: 40px;
+      @include s($train, train-sprite-side);
+      @include transition(none);
+      .train-model{
+        display: none;
+        }
+      }
+    }
+  }

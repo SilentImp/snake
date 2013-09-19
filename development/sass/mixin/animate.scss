@@ -1,0 +1,7 @@
+@mixin animate($animation){
+	$val: unquote($animation);
+	-webkit-animation: $val;
+	-moz-animation: $val;
+	-ms-animation: $val;
+	animation: $val;
+}

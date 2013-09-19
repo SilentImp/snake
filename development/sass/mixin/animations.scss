@@ -1,0 +1,101 @@
+@import "compass";
+
+@-webkit-keyframes falling{ 
+	100% {
+		@include transform3d(translateZ(-50px));
+		opacity: 0;
+		}
+	}
+	
+@-moz-keyframes falling{ 
+	100% {
+		@include transform3d(translateZ(-50px));
+		opacity: 0;
+		}
+	}
+	
+@-ms-keyframes falling{ 
+	100% {
+		@include transform3d(translateZ(-50px));
+		opacity: 0;
+		}
+	}
+	
+@keyframes falling{
+	100% {
+		@include transform3d(translateZ(-50px));
+		opacity: 0;
+		}
+	}
+
+@-webkit-keyframes arotateX{ 
+	100% {
+		@include transform3d(rotateX(360deg));
+		}
+	}
+	
+@-moz-keyframes arotateX{ 
+	100% {
+		@include transform3d(rotateX(360deg));
+		}
+	}
+	
+@-ms-keyframes arotateX{ 
+	100% {
+		@include transform3d(rotateX(360deg));
+		}
+	}
+	
+@keyframes arotateX{ 
+	100% {
+		@include transform3d(rotateX(360deg));
+		}
+	}
+
+@-webkit-keyframes arotateY{ 
+	100% {
+		@include transform3d(rotateY(360deg));
+		}
+	}
+	
+@-moz-keyframes arotateY{ 
+	100% {
+		@include transform3d(rotateY(360deg));
+		}
+	}
+	
+@-ms-keyframes arotateY{ 
+	100% {
+		@include transform3d(rotateY(360deg));
+		}
+	}
+	
+@keyframes arotateY{ 
+	100% {
+		@include transform3d(rotateY(360deg));
+		}
+	}
+
+@-webkit-keyframes arotateZ{ 
+	100% {
+		@include transform3d(rotateZ(360deg));
+		}
+	}
+	
+@-moz-keyframes arotateZ{ 
+	100% {
+		@include transform3d(rotateZ(360deg));
+		}
+	}
+	
+@-ms-keyframes arotateZ{ 
+	100% {
+		@include transform3d(rotateZ(360deg));
+		}
+	}
+	
+@keyframes arotateZ{ 
+	100% {
+		@include transform3d(rotateZ(360deg));
+		}
+	}

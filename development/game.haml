@@ -1,0 +1,191 @@
+- # encoding: UTF-8
+<!doctype html>
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "UTF-8"}/
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"}
+    %link{:rel => "localization", :href => "language/l20n.json"}/
+    %link{:rel => "stylesheet", :href => "css/common.css"}/
+    %script{src:"http://localhost:3555/livereload.js"}
+    %script{:src => "js/require.js", "data-main" => "js/main.js"}
+    %title{"data-l10n-id" => "appTitle"} Sire-Train
+  %body
+
+    -# Экран загрузки
+    .loading-screen
+      .line 0%
+
+    .page.state-menu
+
+      -# Экран главного меню
+      %section.screen.menu
+        .sky
+          .cloud.cloud-1
+          .cloud.cloud-2
+        %h1.title{"data-l10n-id"=>"appTitle"} Sire-Train
+        %nav.global-navigation
+          %a.play{:href => "#", "data-l10n-id" => "play"} Play
+          %a.score{:href => "#", "data-l10n-id" => "score"} Scores
+          %a.change{:href => "#", "data-l10n-id" => "name"} Name
+        %nav.language-navigation
+          %a{:href => "#", "data-lang" => "ru"} Русский
+          %a{:href => "#", "data-lang" => "en"} Английский
+        .menu-scene
+          .ground.soil
+          .house
+            .house-model
+              .front
+              .back
+              .right
+              .roof
+              .floor
+          .train
+            .train-model
+              .back
+              .left
+              .right
+              .roof
+              .floor
+
+      -# Экран содержащий список лучших игроков
+      %section.screen.score
+        .data
+          %h2{"data-l10n-id"=>"score"} Scores
+          %ol
+            %li
+              %span.name
+                Friedrich Nietzsche
+              %span.count
+                50 000
+            %li
+              %span.name
+                Immanuel Kant
+              %span.count
+                40 000
+            %li
+              %span.name
+                Martin Heidegger
+              %span.count
+                30 000
+            %li
+              %span.name
+                Arthur Schopenhauer
+              %span.count
+                20 000
+            %li
+              %span.name
+                Fyodor Dostoyevsky
+              %span.count
+                10 000
+          %nav
+            %a.menu{:href => "#", "data-l10n-id"=>"back"} Back
+        .sky
+          .cloud.cloud-1
+          .cloud.cloud-2
+          .cloud.cloud-3
+          .cloud.cloud-4
+          .cloud.cloud-5
+          .cloud.cloud-6
+          .cloud.cloud-7
+          .cloud.cloud-8
+        .train-1
+          .train-model
+            .front
+            .back
+            .left
+            .right
+            .roof
+        .train-2
+          .train-model
+            .front
+            .back
+            .left
+            .right
+            .roof
+        .train-3
+          .train-model
+            .front
+            .back
+            .left
+            .right
+            .roof
+
+      -# Экран ввода имени игрока
+      %form.screen.name{:action=>"/save", :method=>"post"}
+        %h2.question{"data-l10n-id"=>"whoAreYou"}Who THE HELL are you?
+        %fieldset.answer.answer-1
+          %label{:for => "name"}
+            %span{"data-l10n-id"=>"myName"}I am
+            %input{:type => "text", :name=>"name", :id=>"name", :placeholder=>"Hamtni Humbert", :value => "Hamtni Humbert", "data-l10n-id"=>"nameInput",:required=>"required", :autocomplete=>"off"}/
+          %button.submit{type: "submit"} !
+        %fieldset.answer.answer-2.menu{"data-l10n-id"=>"bb"}See ya, bye-bye!
+
+      -# Игровой экран
+      %section.screen.game
+        .back-count 3
+        .game-wrapper
+          .cloud.cloud-1
+          .field.soil#field
+            .side
+            .position
+              %a.quit{:href => "#", "data-l10n-id"=>"gameBack"} Back
+              .x-cord
+              .y-cord
+              .stats
+                %h2{"data-l10n-id"=>"scoreName"} Score:
+                %span.count 0
+
+      -# Экран конца игры
+      %section.screen.game-over
+        %h2{"data-l10n-id"=>"gameOver"} Game Over
+        %p
+          %span{"data-l10n-id"=>"gameOverScore"} Your score is
+          %span.count 0
+        %nav
+          %a.again{:href => "#", "data-l10n-id"=>"PlayAgain"} Play again!
+          %a.menu{:href => "#", "data-l10n-id"=>"quit"} Bye-bye!
+
+    .controller
+      .up
+        &uarr;
+      .down
+        &darr;
+      .left
+        &larr;
+      .right
+        &rarr;
+
+    -# Шаблолнные игровые элементы
+    #templates
+      #person
+        .person
+          %li
+            %span.name
+            %span.count
+      #food-template
+        .train-pos.food
+          .train
+            .train-model
+              .front
+              .back
+              .left
+              .right
+              .roof
+      #train-template
+        .train-pos
+          .train
+            .train-model
+              .front
+              .back
+              .left
+              .right
+              .roof
+      #house-template
+        .house-pos
+          .house
+            .house-model
+              .front
+              .right
+              .left
+              .roof
+              .floor

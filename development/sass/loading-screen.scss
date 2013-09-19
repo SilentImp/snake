@@ -1,0 +1,54 @@
+@import "compass";
+@import "mixin/*";
+
+.loading-screen{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #FFF;
+  z-index: 10000;
+  margin: auto;
+  .line{
+    height: 240px;
+    width: 240px;
+    position: absolute;
+    padding: 20px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    line-height: 240px;
+    font-size: 90px;
+    word-break:break-all;
+    background-color: #f6f6f6; 
+    color: #000;
+    border-radius: 240px;
+    @include box-shadow(0 0 0 60px #fcfcfc);
+    &:after{
+      content:".";
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      @include background(#fff inline-image('loader.gif') 50% 50% no-repeat); 
+      display: block;
+      text-indent: -9999px;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      z-index: 10001;
+      @include opacity(.8);
+      @include background-size(16px 16px);
+      @include box-shadow(0 0 0 20px rgba(255, 255, 255, .5));
+      }
+    } 
+  }

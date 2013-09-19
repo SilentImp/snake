@@ -1,0 +1,260 @@
+@-webkit-keyframes falling {
+  /* line 4, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: translateZ(-50px);
+    -moz-transform: translateZ(-50px);
+    -ms-transform: translateZ(-50px);
+    -o-transform: translateZ(-50px);
+    transform: translateZ(-50px);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes falling {
+  /* line 11, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: translateZ(-50px);
+    -moz-transform: translateZ(-50px);
+    -ms-transform: translateZ(-50px);
+    -o-transform: translateZ(-50px);
+    transform: translateZ(-50px);
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes falling {
+  /* line 18, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: translateZ(-50px);
+    -moz-transform: translateZ(-50px);
+    -ms-transform: translateZ(-50px);
+    -o-transform: translateZ(-50px);
+    transform: translateZ(-50px);
+    opacity: 0;
+  }
+}
+
+@keyframes falling {
+  /* line 25, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: translateZ(-50px);
+    -moz-transform: translateZ(-50px);
+    -ms-transform: translateZ(-50px);
+    -o-transform: translateZ(-50px);
+    transform: translateZ(-50px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes arotateX {
+  /* line 32, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+@-moz-keyframes arotateX {
+  /* line 38, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+@-ms-keyframes arotateX {
+  /* line 44, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes arotateX {
+  /* line 50, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+@-webkit-keyframes arotateY {
+  /* line 56, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-moz-keyframes arotateY {
+  /* line 62, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-ms-keyframes arotateY {
+  /* line 68, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes arotateY {
+  /* line 74, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes arotateZ {
+  /* line 80, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+@-moz-keyframes arotateZ {
+  /* line 86, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+@-ms-keyframes arotateZ {
+  /* line 92, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes arotateZ {
+  /* line 98, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+/* line 5, ../sass/controller.scss */
+.controller {
+  display: none;
+}
+
+/* line 10, ../sass/controller.scss */
+html.touch .controller {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 220px;
+  height: 220px;
+  z-index: 30000;
+  color: #FFF;
+}
+/* line 23, ../sass/controller.scss */
+html.touch .controller .up:active,
+html.touch .controller .left:active,
+html.touch .controller .down:active,
+html.touch .controller .right:active {
+  background-color: rgba(255, 0, 0, 0.75);
+}
+/* line 26, ../sass/controller.scss */
+html.touch .controller .up {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  background-color: rgba(255, 0, 0, 0.25);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -40px;
+  line-height: 70px;
+  font-size: 36px;
+  text-align: center;
+}
+/* line 40, ../sass/controller.scss */
+html.touch .controller .down {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  background-color: rgba(255, 0, 0, 0.25);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin: 0 0 0 -40px;
+  line-height: 70px;
+  font-size: 36px;
+  text-align: center;
+}
+/* line 54, ../sass/controller.scss */
+html.touch .controller .left {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  background-color: rgba(255, 0, 0, 0.25);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin: -40px 0 0 0;
+  line-height: 70px;
+  font-size: 36px;
+  text-align: center;
+}
+/* line 68, ../sass/controller.scss */
+html.touch .controller .right {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  background-color: rgba(255, 0, 0, 0.25);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin: -40px 0 0 0;
+  line-height: 70px;
+  font-size: 36px;
+  text-align: center;
+}

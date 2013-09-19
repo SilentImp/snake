@@ -1,0 +1,306 @@
+@-webkit-keyframes falling {
+  /* line 4, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: translateZ(-50px);
+    -moz-transform: translateZ(-50px);
+    -ms-transform: translateZ(-50px);
+    -o-transform: translateZ(-50px);
+    transform: translateZ(-50px);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes falling {
+  /* line 11, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: translateZ(-50px);
+    -moz-transform: translateZ(-50px);
+    -ms-transform: translateZ(-50px);
+    -o-transform: translateZ(-50px);
+    transform: translateZ(-50px);
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes falling {
+  /* line 18, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: translateZ(-50px);
+    -moz-transform: translateZ(-50px);
+    -ms-transform: translateZ(-50px);
+    -o-transform: translateZ(-50px);
+    transform: translateZ(-50px);
+    opacity: 0;
+  }
+}
+
+@keyframes falling {
+  /* line 25, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: translateZ(-50px);
+    -moz-transform: translateZ(-50px);
+    -ms-transform: translateZ(-50px);
+    -o-transform: translateZ(-50px);
+    transform: translateZ(-50px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes arotateX {
+  /* line 32, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+@-moz-keyframes arotateX {
+  /* line 38, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+@-ms-keyframes arotateX {
+  /* line 44, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes arotateX {
+  /* line 50, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+@-webkit-keyframes arotateY {
+  /* line 56, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-moz-keyframes arotateY {
+  /* line 62, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-ms-keyframes arotateY {
+  /* line 68, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes arotateY {
+  /* line 74, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes arotateZ {
+  /* line 80, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+@-moz-keyframes arotateZ {
+  /* line 86, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+@-ms-keyframes arotateZ {
+  /* line 92, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes arotateZ {
+  /* line 98, ../sass/mixin/animations.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+/* line 33, ../sass/house-model.scss */
+.house-model {
+  position: absolute;
+  width: 0;
+  height: 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateX(-90deg) translateZ(-108.25px) scaleX(0.5) scaleY(0.5) scaleZ(0.5);
+  -moz-transform: rotateX(-90deg) translateZ(-108.25px) scaleX(0.5) scaleY(0.5) scaleZ(0.5);
+  -ms-transform: rotateX(-90deg) translateZ(-108.25px) scaleX(0.5) scaleY(0.5) scaleZ(0.5);
+  -o-transform: rotateX(-90deg) translateZ(-108.25px) scaleX(0.5) scaleY(0.5) scaleZ(0.5);
+  transform: rotateX(-90deg) translateZ(-108.25px) scaleX(0.5) scaleY(0.5) scaleZ(0.5);
+}
+/* line 45, ../sass/house-model.scss */
+.house-model .roof {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('../images/house-s39c09f8cc3.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 201px;
+  height: 244px;
+  margin-left: -100.5px;
+  margin-top: -122px;
+  -webkit-transform: translateZ(-214.5px);
+  -moz-transform: translateZ(-214.5px);
+  -ms-transform: translateZ(-214.5px);
+  -o-transform: translateZ(-214.5px);
+  transform: translateZ(-214.5px);
+}
+/* line 56, ../sass/house-model.scss */
+.house-model .floor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 201px;
+  height: 244px;
+  -webkit-box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.5);
+  margin-left: -100.5px;
+  margin-top: -122px;
+  -webkit-transform: translateZ(215px);
+  -moz-transform: translateZ(215px);
+  -ms-transform: translateZ(215px);
+  -o-transform: translateZ(215px);
+  transform: translateZ(215px);
+}
+/* line 69, ../sass/house-model.scss */
+.house-model .front {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('../images/house-s39c09f8cc3.png');
+  background-position: 0 -673px;
+  background-repeat: no-repeat;
+  width: 244px;
+  height: 429px;
+  margin-left: -122px;
+  margin-top: -214.5px;
+  height: 429px;
+  -webkit-transform: rotateX(90deg) rotateY(90deg) translateZ(-101px);
+  -moz-transform: rotateX(90deg) rotateY(90deg) translateZ(-101px);
+  -ms-transform: rotateX(90deg) rotateY(90deg) translateZ(-101px);
+  -o-transform: rotateX(90deg) rotateY(90deg) translateZ(-101px);
+  transform: rotateX(90deg) rotateY(90deg) translateZ(-101px);
+}
+/* line 77, ../sass/house-model.scss */
+.house-model .back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('../images/house-s39c09f8cc3.png');
+  background-position: 0 -244px;
+  background-repeat: no-repeat;
+  width: 244px;
+  height: 429px;
+  margin-left: -122px;
+  margin-top: -214.5px;
+  height: 429px;
+  -webkit-transform: rotateX(90deg) rotateY(-90deg) translateZ(-101px);
+  -moz-transform: rotateX(90deg) rotateY(-90deg) translateZ(-101px);
+  -ms-transform: rotateX(90deg) rotateY(-90deg) translateZ(-101px);
+  -o-transform: rotateX(90deg) rotateY(-90deg) translateZ(-101px);
+  transform: rotateX(90deg) rotateY(-90deg) translateZ(-101px);
+}
+/* line 85, ../sass/house-model.scss */
+.house-model .left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('../images/house-s39c09f8cc3.png');
+  background-position: 0 -1102px;
+  background-repeat: no-repeat;
+  width: 201px;
+  height: 429px;
+  margin-left: -100.5px;
+  margin-top: -214.5px;
+  -webkit-transform: rotateX(90deg) translateZ(-122px);
+  -moz-transform: rotateX(90deg) translateZ(-122px);
+  -ms-transform: rotateX(90deg) translateZ(-122px);
+  -o-transform: rotateX(90deg) translateZ(-122px);
+  transform: rotateX(90deg) translateZ(-122px);
+}
+/* line 92, ../sass/house-model.scss */
+.house-model .right {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('../images/house-s39c09f8cc3.png');
+  background-position: 0 -1102px;
+  background-repeat: no-repeat;
+  width: 201px;
+  height: 429px;
+  margin-left: -100.5px;
+  margin-top: -214.5px;
+  -webkit-transform: rotateX(90deg) translateZ(122px);
+  -moz-transform: rotateX(90deg) translateZ(122px);
+  -ms-transform: rotateX(90deg) translateZ(122px);
+  -o-transform: rotateX(90deg) translateZ(122px);
+  transform: rotateX(90deg) translateZ(122px);
+}
